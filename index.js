@@ -57,10 +57,12 @@ function handleTweetBtnClick(){
     const tweetInput = document.getElementById('tweet-input')
 
     if(!tweetInput.value) return;
-    
+
     tweetsData.unshift({
         handle: `@Scrimba`,
-        profilePic: `images/scrimbalogo.png`,
+        // profilePic: `images/scrimbalogo.png`,
+        profilePic: `images/musk.png`,
+
         likes: 0,
         retweets: 0,
         tweetText: tweetInput.value,
