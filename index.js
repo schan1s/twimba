@@ -56,21 +56,21 @@ function handleReplyClick(replyId){
 function handleTweetBtnClick(){
     const tweetInput = document.getElementById('tweet-input')
 
-    if(!tweetInput.value){
-        tweetsData.unshift({
-            handle: `@Scrimba`,
-            profilePic: `images/scrimbalogo.png`,
-            likes: 0,
-            retweets: 0,
-            tweetText: tweetInput.value,
-            replies: [],
-            isLiked: false,
-            isRetweeted: false,
-            uuid: uuidv4()
-        })
+    if(!tweetInput.value) return;
+    
+    tweetsData.unshift({
+        handle: `@Scrimba`,
+        profilePic: `images/scrimbalogo.png`,
+        likes: 0,
+        retweets: 0,
+        tweetText: tweetInput.value,
+        replies: [],
+        isLiked: false,
+        isRetweeted: false,
+        uuid: uuidv4()
+    })
     render()
     tweetInput.value = ''
-    }
 }
 
 
