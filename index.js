@@ -60,7 +60,8 @@ function handleTweetBtnClick(){
 
     tweetsData.unshift({
         handle: `@Scrimba`,
-        profilePic: `images/scrimbalogo.png`,
+        // profilePic: `images/scrimbalogo.png`,
+        profilePic: new URL("images/scrimbalogo.png", import.meta.url),
         likes: 0,
         retweets: 0,
         tweetText: tweetInput.value,
